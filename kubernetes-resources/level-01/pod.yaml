@@ -1,13 +1,19 @@
 apiVersion: v1
-kind: Pod
+kind: ReplicationController
 metadata:
-  name: nginx
-  labels:
-    app: web-server
+  name: kickstart-app
 spec:
-  containers:
-  - image: nginx
-    name: nginx
-    ports:
-    - containerPort: 8000
-name: nginx
+  replicas: 1
+  selector:
+    app: kickstart-app
+  template:
+    metadata:
+      name: kickstart-app
+      labels:
+        app: kickstart-app
+    spec:
+      containers:
+      - name: kickstart-app
+        image: nginx
+        ports:
+        - containerPort: 5000
