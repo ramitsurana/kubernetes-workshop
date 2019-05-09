@@ -39,8 +39,9 @@ The above steps does the following:
 
 ```
 kubeless function deploy hello --runtime python3.6 \
+                                --dependencies /Users/ramitsurana/Projects/personal/kubernetes-workshop/kubernetes-resources/level-03/requirements.txt
                                 --from-file /Users/ramitsurana/Projects/personal/kubernetes-workshop/kubernetes-resources/level-03/server.py\
-                                --handler server.index
+                                --handler server.hello
 ```
 
 ### List Functions

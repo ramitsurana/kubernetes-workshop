@@ -20,7 +20,16 @@ docker push YOUR_USERNAME/myfirstapp
 ```
 
 ## Teardown
+
+```
 docker rm -f myfirstapp
+```
+
+## Remove all stoppped containers
+
+```
+docker rm $(docker ps -a -q)
+```
 
 ## References:
 
