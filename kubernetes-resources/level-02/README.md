@@ -1,4 +1,4 @@
-# Level 02 - Usin
+# Level 02 - Using Helm
 
 * [Basics](#basics)
 * [Helm Hub](#helm-hub)
@@ -85,8 +85,9 @@ Checkout [Helm Hub](https://hub.helm.sh/).
 helm repo add bitnami https://charts.bitnami.com
 ```
 
-## Install Chart
+## Install Wordpress Chart
 
+### Installation
 ```
 helm install bitnami/wordpress --version 5.9.1
 ```
