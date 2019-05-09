@@ -26,44 +26,23 @@ kubectl proxy
 
 ## Kubernetes Commands
 
-### Pods
+## Manifest Commands
 
 ```
-kubectl create -f ./deploy-manifest.yml
+kubectl create -f ./deploy-manifest.yaml
+kubectl apply -f ./deploy-manifest.yaml # Upgrade
+kubectl delete -f ./deploy-manifest.yaml
 ```
 
-### Service
+### More CLI Commands
 
 ```
-kubectl get svc lobsters -o yaml | grep nodePort
-```
-
-### RC
-
-```
-kubectl create -f ./rc.yaml
 kubectl get pods -o wide
-```
-
-###  Kill the Pod
-
-```
-kubectl delete pod <POD_NAME> 
-kubectl get pods -o wide
-```
-```
+kubectl get svc lobsters -o yaml
+kubectl get pods --show-labels
+kubectl delete pod <POD_NAME>
 kubectl scale --replicas=5 rc <RC_NAME>
-kubectl get rc <RC_NAME> -o wide
 ```
-
-### Deployments
-
-```
-kubectl create -f ./dep.yaml
-kubectl get rs -o wide
-kubectl apply -f ./dep-2.yaml
-```
-
 
 ### Teardown
 
