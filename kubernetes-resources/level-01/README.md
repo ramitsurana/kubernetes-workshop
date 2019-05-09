@@ -44,6 +44,12 @@ kubectl delete pod <POD_NAME>
 kubectl scale --replicas=5 rc <RC_NAME>
 ```
 
+* Troubleshooting
+
+```
+# In case service is to be created
+kubectl create svc nodeport sample --tcp=8080:8080
+```
 ### Teardown
 
 ```

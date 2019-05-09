@@ -51,7 +51,6 @@ helm template ./hello-world
 helm install --name hello-world ./hello-world
 ```
 
-
 ## Check Helm Charts
 ```
 helm ls --all
