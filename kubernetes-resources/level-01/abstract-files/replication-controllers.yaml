@@ -1,19 +1,19 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: kickstart-app
+  name: sample
 spec:
   replicas: 1
   selector:
-    app: kickstart-app
+    app: sample
   template:
     metadata:
-      name: kickstart-app
+      name: sample
       labels:
-        app: kickstart-app
+        app: sample
     spec:
       containers:
-      - name: kickstart-app
-        image: ramitsurana/kickstart-app
+      - name: sample
+        image: sample
         ports:
-        - containerPort: 5000
+        - containerPort: 8000

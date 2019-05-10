@@ -42,7 +42,9 @@ kubectl get svc lobsters -o yaml
 kubectl get pods --show-labels
 kubectl delete pod <POD_NAME>
 kubectl scale --replicas=5 rc <RC_NAME>
+kubectl exec -it <POD_NAME> -c <1st_Container> -- bash
 ```
+
 
 * Troubleshooting
 

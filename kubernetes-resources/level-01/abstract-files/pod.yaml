@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kickstart-app
+  name: sample
   labels:
-    name: kickstart-app
+    name: sample
 spec:
   containers:
-  - name: kickstart-app
-    image: ramitsurana/kickstart-app
+  - name: sample
+    image: tomcat
     resources:
       limits:
         memory: "128Mi"
         cpu: "500m"
     ports:
-      - containerPort: 5000
+      - containerPort: 8000

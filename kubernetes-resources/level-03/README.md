@@ -89,7 +89,7 @@ kubectl get ing
 * Using Domain Name
 
 ```
-kubeless trigger http create get-python --function-name get-python --path echo --hostname pune-office.com
+kubeless trigger http create hello --function-name hello --path echo --hostname rean-pune-office.com
 ```
 
 * Test Function
