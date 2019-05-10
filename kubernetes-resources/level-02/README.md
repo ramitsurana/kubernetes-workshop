@@ -68,6 +68,12 @@ helm upgrade hello-world ./hello-world
 helm rollback hello-world 1 # 1 is the version
 ```
 
+## Package 
+
+```
+helm package ./hello-world/
+```
+
 ## Teardown Helm Chart
 
 ```

@@ -59,6 +59,12 @@ kubectl get functions
 kubeless function ls
 ```
 
+### Check Logs Functions
+
+```
+kubectl logs -l function=hello
+```
+
 ### Invoke Function
 
 ```
@@ -95,10 +101,10 @@ kubeless trigger http create hello --function-name hello --path echo --hostname 
 * Test Function
 
 ```
-$ curl --data '{"Another": "Echo"}' \
+curl --data '{"Hi": "Ramit"}' \
   --header "Host: hello.192.168.99.100.nip.io" \
   --header "Content-Type:application/json" \
-  192.168.99.100/echo
+  192.168.99.100/hello
 ```
 ## References
 
