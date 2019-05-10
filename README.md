@@ -8,6 +8,15 @@ Kubernetes Worksphop Material
 * [Level 02 - Using Helm](kubernetes-resources/level-02/README.md)
 * [Level 03 - Building Serverless apps using Kubeless](kubernetes-resources/level-03/README.md)
 
+## Basic Requirements
+
+* Minikube
+* Kubectl
+* Kubeless
+* Helm
+
+**Tip**: Checkout [setup](setup) for more info.
+
 ## Known Minikube configurations
 
 ```
